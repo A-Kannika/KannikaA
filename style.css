@@ -294,4 +294,9 @@ section {
 .sectionHover:hover {
     filter: drop-shadow(0 0 0.5rem rgb(3, 240, 248));
 }
+
+.lineUp {
+  display:flex;
+  align-items: center;
+}
   
