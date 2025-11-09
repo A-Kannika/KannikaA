@@ -6,496 +6,412 @@
   <title>Kannika Armstrong</title>
   <link rel="icon" type="image/x-icon" href="./image/icon/b1.png">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <nav class="sidebar">
-      <img src="image/Profile1.jpg" alt="Kannika Armstrong" class="profile-pic" />
-      <h2>Kannika Armstrong</h2>
-      <ul>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">Kannika Armstrong</a>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#ResearchProjects">Researches & Projects</a></li>
-        <li><a href="#Work">Work Experiences</a></li>
-        <li><a href="#education">Educations</a></li>
-        <li><a href="#achievement">Awards & Achievements</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#Work">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
+
+        <li><button id="theme-toggle">🌙</button></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
-    <main class="content">
-      <section id="home" class="sectionHover">
-        <h1>Hi, I'm Kannika Armstrong.  <span class="wave">👋</span></h1>
-      </section>
+  <header id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Hi, I'm Kannika Armstrong. <span class="wave">👋</span></h1>
+      <p class="hero-subtitle">
+        Master’s student in Computer Science and Systems, passionate about solving complex problems through code and experimentation.
+      </p>
+      <a href="#portfolio" class="hero-button">View My Work</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="Kannika Armstrong_CV.pdf" class="hero-button hero-button-secondary" download>Download My CV</a>
+    </div>
+  </header>
 
-      <section id="about" class="sectionHover">
-        <h2>About Me</h2>
-        <p>I’m a Master’s student in Computer Science and Systems at the University of Washington Tacoma, skilled in secure software development, system optimization, and data-driven research. Experience spans cryptographic protocol design, machine learning, database internals, and distributed computing. Passionate about solving complex problems through code and experimentation.
-           <span class="highlight">Open to roles in software engineering, data engineering, security engineering, or research and teaching in academic environments.</span>
-          </p>
-      </section>
+  <main>
+    <section id="about" class="page-section">
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>I’m a Master’s student in Computer Science and Systems at the University of Washington Tacoma, skilled in secure software development, system optimization, and data-driven research. Experience spans cryptographic protocol design, machine learning, database internals, and distributed computing. Passionate about solving complex problems through code and experimentation.</p>
+            <p class="highlight">Open to roles in software engineering, data engineering, security engineering, or research and teaching in academic environments.</p>
+          </div>
+          <div class="about-skills">
+            <h3>My Skills</h3>
+            <ul class="skills-list">
+              <li><span>Programming Languages:</span> Java, Python, JavaScript, SQL, PostgreSQL, MySQL, HTML, CSS, PHP, R, Rust</li>
+              <li><span>Frameworks & Libraries:</span> scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow, Streamlit, ReportLab, Plotly</li>
+              <li><span>Tools:</span> MS SQL Server, Bootstrap, WordPress, Git, GitHub, Google Colab, Jupyter Notebook, GitHub Actions, Tableau, Excel, VS Code, Linux, Mac OSX, Windows.</li>
+              <li><span>Quantitative:</span> Physics, Mathematics, Calculus, Algebra</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="skills" class="sectionHover">
-        <h2>Skills</h2>
-        <ul>
-          <li><span>Programming Languages: </span> Java, Python, Rust, SQL, MySQL, JavaScript, HTML, CSS, PHP</li>
-          <li><span>Libraries & Tools: </span>PyCryptodome, Cryptography, Qiskit, hashlib, hmac, NumPy, pandas, TensorFlow, scikit-learn,
-            Matplotlib, MS SQL Server, Git, GitHub, NLP (TF-IDF, BERT, LSTM), FastAPI</li>
-          <li><span>Cryptography: </span>Post-Quantum Cryptography, Threshold Digital Signatures, Lattice-based Cryptography, Kyber, MAC,
-            Ascon-MAC</li>
-            <li><span>Database: </span>SQL Development, Database Internals, Data Analysis, Query Optimization, database performance tuning, query plan analysis</li>
-            <li><span>Quantitative: </span>Physics, Mathematics, Calculus, Algebra</li>
-        </ul>
-      </section>
-
-      <section id="ResearchProjects" class="sectionHover">
-        <h2>Researches & Projects</h2>
-        <div class="container2">
-          <section id="research">
-            <fieldset>
-              <legend class="text-on-top"><span class="highlight">Researches</span></legend>
-              <div class="grid-container">
-                <section id="thesis" class="researchSection">
-                  <h4 class="topicsTitle">Master’s Thesis - University of Washington Tacoma  <span id="time">(In Progress)</span></h4>
-                    <h4 id="titleName">Optimizing Performance and Efficiency of Lattice-Based 
-                      Post-Quantum Cryptography Algorithms in Resource-Constrained UAV Environments</h4>
-                      <ul class="detailsBullets">
-                        <li>Developing a secure communication protocol combining Kyber (lattice-based PQC) and Ascon-MAC (lightweight authentication) for UAV networks</li>
-                        <li>Applying optimization techniques including Number-Theoretic Transform (NTT), vectorization, caching, and parallelization to enhance algorithm efficiency</li>
-                        <li>Simulating performance in constrained UAV environments using Python and evaluating metrics such as computation time, memory footprint, energy consumption, and latency</li>
-                        <li>Conducting formal security verification using ProVerif to ensure resistance to quantum attacks and protocol robustness under optimization</li>
-                      </ul>
-                      <p id="skillSet">Cryptography</p>
-                      <p id="skillSet">Post-Quantum Cryptography</p>
-                      <p id="skillSet">Lattice-Based Cryptography</p>
-                      <p id="skillSet">Kyber</p>
-                      <p id="skillSet">Ascon-Mac</p>
-                      <p id="skillSet">Python</p>
-                </section>
-                <section id="thesis" class="researchSection">
-                  <h4 class="topicsTitle">Independent Study - University of Washington Tacoma  <span id="time">(January 2025 - March 2025)</span></h4>
-                    <h4 id="titleName">Post-Quantum Cryptosystems</h4>
-                      <ul class="detailsBullets">
-                        <li>Conducted an in-depth study of cryptographic schemes designed to resist quantum attacks, focusing on lattice-based, hash-based, and multivariate systems.</li>
-                        <li>Analyzed theoretical foundations (e.g., computational complexity, quantum vulnerabilities) and practical implementations, including Learning with Errors (LWE) encryption and homomorphic encryption.</li>
-                        <li>Produced a comprehensive research report/project evaluating current post-quantum standards and exploring novel cryptographic approaches.</li>
-                      </ul>
-                      <p id="skillSet">Cryptography</p>
-                      <p id="skillSet">Post-Quantum Cryptography</p>
-                      <p id="skillSet">Learning with Errors</p>
-                </section>
+    <section id="portfolio" class="page-section alt-bg">
+      <div class="section-container">
+        <h2 class="section-title">Researches & Projects</h2>
+        
+        <h3>Researches</h3>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-item-content">
+              <h4 class="portfolio-title">Master’s Thesis (In Progress)</h4>
+              <p class="portfolio-subtitle">Optimizing Performance and Efficiency of Lattice-Based Post-Quantum Cryptography Algorithms in Resource-Constrained UAV Environments</p>
+              <ul class="portfolio-details">
+                <li>Architecting a secure UAV protocol by integrating Kyber (PQC) and Ascon-MAC.</li>
+                <li>Implementing NTT, vectorization, and parallelization to optimize for resource-constrained hardware.</li>
+                <li>Simulating protocol performance in Python to benchmark latency, memory, and computation time.</li>
+                <li>Conducting formal security verification with ProVerif to ensure quantum resistance and protocol robustness.</li>
+              </ul>
+              <div class="skill-tags">
+                <span class="tag">Cryptography</span>
+                <span class="tag">PQC</span>
+                <span class="tag">Kyber</span>
+                <span class="tag">Python</span>
+                <span class="tag">Rust</span>
               </div>
-            </fieldset>
-
-          </section>
-
-          <section id="projects">
-            <fieldset>
-              <legend class="text-on-top2"><span class="highlight">Projects</span></legend>
-              <div class="grid-container2">
-                <div class="item1" id="itemSet">
-                  <h4 class="projectTitle">ML-Powered Aircraft Failure Prediction <span id="projectTime">(In Progress)</span></h4>
-                    <h4 id="projectName">Remaining Useful Life (RUL) Prediction for Jet Engines</h4>
-                      <ul class="detailsBullets">
-                        <li>Developed and compared LSTM and classical ML models (Random Forest, Ridge Regression) to predict RUL from CMAPSS jet engine data.</li>
-                        <li>Built a real-time simulator interface using Streamlit for dynamic visualization of sensor data and predictions.</li>
-                        <li>Achieved accurate life prediction with LSTM after time-series processing and data normalization.</li>
-                        <li>Implemented model persistence using .pkl and .h5 formats for deployment and reproducibility.</li>
-                        <li>Employed CMAPSS dataset from NASA for authentic failure patterns and time-to-failure modeling.</li>
-                      </ul>
-                      <div class="lineUp">
-                      <a style="margin-right: 7px;" href="https://github.com/A-Kannika/ML-Powered-Aircraft-Failure-Detection" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                      </a>
-                      <p id="skillSet">Python</p>
-                      <p id="skillSet">TensorFlow</p>
-                      <p id="skillSet">Scikit-learn</p>
-                      <p id="skillSet">Pandas</p>
-                      <p id="skillSet">Streamlit</p>
-                      <p id="skillSet">NumPy</p>
-                      </div>
-                  
-                </div>
-
-                
-                <div class="item1" id="itemSet">
-                  <h4 class="projectTitle">Smart News API <span id="projectTime">(In Progress)</span></h4>
-                    <h4 id="projectName">Personalized News & Article Aggregator API</h4>
-                      <ul class="detailsBullets">
-                        <li>Developed a RESTful API using FastAPI that fetches live news articles from NewsAPI.org, extracts keywords using TF-IDF, and serves filterable JSON endpoints without relying on a database.</li>
-                        <li>Employed JSON file storage to maintain lightweight and portable data persistence.</li>
-                        <li>Demonstrated skills in web API development, natural language processing, and asynchronous task scheduling.</li>
-                      </ul>
-                      <div class="lineUp">
-                      <a style="margin-right: 7px;" href="https://github.com/A-Kannika/smart-news-api" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                      </a>
-                      <p id="skillSet">Python</p>
-                      <p id="skillSet">FastAPI</p>
-                      <p id="skillSet">NLP</p>
-                      <p id="skillSet">APScheduler</p>
-                      </div>
-                  
-                </div>
-                <div class="item1" id="itemSet">
-                  <h4 class="projectTitle">Database Systems Internals Project <span id="projectTime">(March 2025 - June 2025)</span></h4>
-                    <h4 id="projectName">Database Systems Internals Project:Query Optimization</h4>
-                      <ul class="detailsBullets">
-                        <li>Design and implement a database in MS SQL Server to study query optimizer behavior under schema and data distribution changes.</li>
-                        <li>Analyze and enforce different query plans by modifying indexes, constraints, and table cardinalities.</li>
-                        <li>Investigate optimizer mispredictions by crafting queries and manually overriding execution plans using query hints and XML plans.</li>
-                        <li>Benchmark query plans by comparing estimated costs and actual execution times.</li>
-                        <li>Focus on understanding and improving database query performance through systematic schema and data manipulation.</li>
-                      </ul>
-                      <div class="lineUp">
-                      <a style="margin-right: 7px;" href="https://github.com/A-Kannika/Database-Systems-Internals-Project-Query-Optimization" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                      </a>
-                      <p id="skillSet">SQL optimization</p>
-                      <p id="skillSet">MS SQL Server</p>
-                      <p id="skillSet">performance tuning</p>
-                      <p id="skillSet">query plan analysis</p>
-                      <p id="skillSet">SQL Development</p>
-                      <p id="skillSet">Database Internals</p>
-                      </div>
-                </div>
-
-                <div class="item1" id="itemSet">
-                  <h4 class="projectTitle">Distributed Systems Research Project  <span id="projectTime">(January 2025 - March 2025)</span></h4>
-                    <h4 id="projectName">Integrating Secure Multiparty Computation with Threshold Digital Signatures for Quantum-Resistant Distributed Systems</h4>
-                      <ul class="detailsBullets">
-                        <li>Designed an SMC protocol with threshold digital signatures for quantum-resistant systems.</li>
-                        <li>Developed a hybrid cryptographic framework using lattice-based & hash-based digital signatures.</li>
-                        <li>Implemented in Python (PyCryptodome, NumPy, SciPy) and evaluated performance.</li>
-                        <li>Conducted security analysis & benchmarking to assess computational overhead.</li>
-                      </ul>
-                      <div class="lineUp">
-                      <a style="margin-right: 7px;" href="https://github.com/A-Kannika/SMC-Threshold-Digital-Signatures" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                      </a>
-                      <p id="skillSet">Distributed Systems</p>
-                      <p id="skillSet">Cryptography</p>
-                      <p id="skillSet">Post-Quantum Cryptography</p>
-                      <p id="skillSet">Secure Multiparty Computation</p>
-                      <p id="skillSet">SMC protocol</p>
-                      </div>
-                </div>
-
-                <div class="item2" id="itemSet">
-                  <h4 class="projectTitle">Machine Learning Project  <span id="projectTime">(September 2024 - December 2024)</span></h4>
-                    <h4 id="projectName">Machine Learning for Social Media User Profiling</h4>
-                      <ul class="detailsBullets">
-                        <li>Developed ML models to predict demographics & Big Five personality traits.</li>
-                        <li>Achieved 76% accuracy in gender prediction (baseline: 59%) and 63% in age prediction.</li>
-                        <li>Applied TF-IDF, BERT embeddings, and LSTMs for NLP-based feature extraction.</li>
-                        <li>Enhanced personality prediction using Gradient Boosting Regressor, exceeding baseline models.</li>
-                      </ul>
-                      <div class="lineUp">
-                      <a style="margin-right: 7px;" href="https://github.com/A-Kannika/Machine-Learning-for-Social-Media-User-Profiling" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                      </a>
-                      <p id="skillSet">Machine Learning</p>
-                      <p id="skillSet">Python</p>
-                      <p id="skillSet">NumPy</p>
-                      <p id="skillSet">Gradient Boosting Regressor</p>
-                      <p id="skillSet">Prediction Models</p>
-                      </div>
-                </div>
-
-                <div class="item3" id="itemSet">
-                  <img src="./image/projects/crypto.png">
-                  <div class="info">
-                    <h4 id="projectName">Cryptographic Application</h4>
-                    <p class="detailsCard">
-                            This project is an application for asymmetric encryption and digital
-                            signatures at the 256-bit security level. The algorithm used SHA-3
-                            derived function KMACXOF256, ECDHIES encryption, and Schnorr signatures.
-                    </p>
-                    <a href="https://github.com/A-Kannika/CryptographicApplication" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                    </a>
-                  </div>
-                  <p id="skillSet2">Cryptography</p>
-                  <p id="skillSet2">Java</p>
-                  <p id="skillSet2">Git</p>
-                </div>
-
-                <div class="item4" id="itemSet">
-                  <img src="./image/projects/tiktalkapp.png">
-                  <div class="info">
-                    <h4 id="projectName">TikTalk: Chat&Weather App</h4>
-                    <p class="detailsCard">
-                      This project is the Android chat and weather application that develops
-                      and maintains two distinct (Client and Server) code bases. The team used
-                      the Scrum/Agile methodologies framework to implement the software
-                      development process.
-                    </p>
-                    <a href="https://github.com/A-Kannika/Team-3-TCSS-450" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                    </a>
-                  </div>
-                  <p id="skillSet2">Java</p>
-                  <p id="skillSet2">JavaScript</p>
-                  <p id="skillSet2">Node.js</p>
-                  <p id="skillSet2">PostgreSQL</p>
-                  <p id="skillSet2">Android Studio</p>
-                </div> 
-
-                <div class="item5" id="itemSet">
-                  <img src="./image/projects/triviamaze.png">
-                  <div class="info">
-                    <h4 id="projectName">Husky Trivia Maze Game</h4>
-                    <p class="detailsCard">
-                      The husky trivial maze game was a team project considering the software life
-                      cycle, naming, and coding style, user stories, iterations planning,
-                      Agile methodologies, and UML Class Diagrams. We also implemented an SQL
-                      database using SQLite.
-                    </p>
-                    <a href="https://github.com/A-Kannika/TriviaMazeGame_Project" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                    </a>
-                  </div>
-                  <p id="skillSet2">Java</p>
-                  <p id="skillSet2">Swing GUI</p>
-                  <p id="skillSet2">JUnit</p>
-                  <p id="skillSet2">SQLite</p>
-                  <p id="skillSet2">Git</p>
-                </div>
-
-                <div class="item6" id="itemSet">
-                  <img src="./image/projects/stat.png">
-                  <div class="info">
-                    <h4 id="projectName">Unemployment Analysis</h4>
-                    <p class="detailsCard">
-                      This study shows that the unemployment rate in March 2021 in the urban
-                      counties is lower than that of the rural county counterparts in
-                      Washington State and Oregon State. However, the object of this study was
-                      to analyze the real-world data using statistical techniques.
-                    </p>
-                    <a href="https://github.com/A-Kannika/UnemploymentAnalysis" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                    </a>
-                  </div>
-                  <p id="skillSet2">R</p>
-                  <p id="skillSet2">R Studio</p>
-                  <p id="skillSet2">Statistic</p>
-                  <p id="skillSet2">analysis</p>
-                </div>
-
-                <div class="item7" id="itemSet">
-                  <img src="./image/projects/database.png">
-                  <div class="info">
-                    <h4 id="projectName">Movie Tickets Reservation Systems</h4>
-                    <p class="detailsCard">
-                      his project is an online movie ticket booking system that provided the
-                      database's conceptual model and developed a functional front end of the
-                      database application to demonstrate the significant functionalities.
-                    </p>
-                    <a href="https://github.com/A-Kannika/Movie_Tickets_Reservation_Systems_Project" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                    </a>
-                  </div>
-                  <p id="skillSet2">MySQL</p>
-                  <p id="skillSet2">PHP</p>
-                  <p id="skillSet2">HTML</p>
-                  <p id="skillSet2">CSS</p>
-                  <p id="skillSet2">Bootstrap5</p>
-                </div>
-
-                <div class="item8" id="itemSet">
-                  <img src="./image/projects/project_github.png">
-                  <div class="info">
-                    <h4 id="projectName">More Projects On GitHub ...</h4>
-                    <p class="detailsCard">
-                      Some more of my students' and self-taught projects are on GitHub.
-                    </p>
-                    <a href="https://github.com/A-Kannika" target="_blank">
-                            <img id="github" src="./image/icon/github.png" alt="">
-                    </a>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-item-content">
+              <h4 class="portfolio-title">Master's Independent Study</h4>
+              <p class="portfolio-subtitle">Post-Quantum Cryptosystems</p>
+              <ul class="portfolio-details">
+                <li>Conducted an in-depth study of cryptographic schemes designed to resist quantum attacks, focusing on lattice-based, hash-based, and multivariate systems.</li>
+                <li>Analyzed theoretical foundations (e.g., computational complexity, quantum vulnerabilities) and practical implementations, including Learning with Errors (LWE) encryption and homomorphic encryption.</li>
+                <li>Produced a comprehensive research report/project evaluating current post-quantum standards and exploring novel cryptographic approaches.</li>
+              </ul>
+              <div class="skill-tags">
+                <span class="tag">Cryptography</span>
+                <span class="tag">PQC</span>
+                <span class="tag">LWE</span>
               </div>
-
-            </fieldset>
-          </section>
-        </div>
-      </section>
-
-      <section id="Work" class="sectionHover">
-        <h2>Work Experiences</h2>
-        <div class="container2">
-          <section id="workSections">
-            <div class="grid-container">
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">University of Washington Tacoma, WA  <span id="time">(September 2024 - Present)</span></h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Teaching Assistant  <span id="time">(March 2025 - Present)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Led lab sessions, provided personalized feedback, and evaluated student Java programming projects.</li>
-                      <li>Mentored with class projects, problem-solving strategies, and Java code debugging.</li>
-                    </ul>
-                  </li>
-                  <li class="workList">
-                    <h4 id="titleName">Computer Science Mentor  <span id="time">(September 2024 - March 2025)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Mentored 50+ students in data structures, algorithms, and computer science coursework.</li>
-                      <li>Assisted with class projects, problem-solving strategies, and debugging Python/Java code.</li>
-                      <li>Designed visual explanations for complex topics, improving student comprehension.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </section>
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">Pierce College, WA  <span id="time">(October 2020 - December 2021 and January 2024 - December 2024)</span></h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Computer Science and Mathematics/Calculus Supplemental Instruction Tutor</h4>
-                    <ul class="detailsBullets">
-                      <li>Tutored and mentored 4 classrooms of 86 undergraduate students in Calculus, Introduction to Programming (Python), and Computer Science I & II (Java and Object-Oriented Programming).</li>
-                      <li>Facilitated out-of-class group study sessions to reinforce course material and enhance understanding of class criteria.</li>
-                      <li>Provided individualized and group support to students needing extra help, employing diverse teaching techniques to promote critical thinking and problem-solving skills.</li>
-                      <li>Focused on content mastery and effective learning strategies to help students achieve passing grades.</li>
-                      <li>Maintained a positive, encouraging learning environment and coordinated with professors to align supplemental instruction with course objectives.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </section>
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">The Princeton Review / Tutor.com, (Remote)  <span id="time">(January 2024 - December 2024)</span></h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Mathematics and Computer Science Tutor</h4>
-                    <ul class="detailsBullets">
-                      <li>Tutored students in Algebra, Trigonometry, Calculus, and Computer Science, helping them deepen their understanding of core concepts outside of class hours.</li>
-                      <li>Enhanced academic performance and supported retention in Mathematics and Java courses by applying effective instructional strategies.</li>
-                      <li>Utilized diverse teaching techniques to encourage content mastery and independent problem-solving.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </section>
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">Thai Meteorological Department, Bangkok, Thailand <span id="time">(May 2006 – May 2018)</span></h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Secretary to the Deputy Director-General for Academic Affairs  <span id="time">(February 2013 - May 2018)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Reviewed, screened, and summarized academic and policy-related documents prior to executive consideration.</li>
-                      <li>Advised and supported the Deputy Director-General on academic initiatives, government correspondence, and inter-agency coordination.</li>
-                      <li>Liaised with internal departments and external agencies to ensure the timely and accurate dissemination of academic content.</li>
-                      <li>Assisted in drafting official letters, reports, and briefing materials for academic and administrative matters.</li>
-                      <li>Maintained confidential records, monitored project progress, and coordinated schedules and meeting agendas</li>
-                    </ul>
-                  </li>
-                  <li class="workList">
-                    <h4 id="titleName">Meteorologist Practitioner, Climatological Center  <span id="time">(February 2010 - May 2018)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Analyzed historical and real-time climate data from meteorological stations, radar, satellite imagery, and computer models to develop accurate climate and seasonal predictions.</li>
-                      <li>Collaborated in developing and refining weather models using statistical and predictive analysis, supporting seasonal outlooks for Thailand and Southeast Asia.</li>
-                      <li>Provided expert insights on global and regional climate factors (e.g., ENSO, IOD, Asian monsoon, MJO, SST) to guide strategies in pollution control, agriculture, water management, and climate change mitigation.</li>
-                      <li>Presented climate predictions and recommendations at local and international seminars, conferences, and forums, including participation in the ASEAN Climate Outlook Forum.</li>
-                    </ul>
-                  </li>
-                  <li class="workList">
-                    <h4 id="titleName">Meteorologist Practitioner, Marine Meteorological Center  <span id="time">(December 2008 - January 2010)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Analyzed wave height data in the Gulf of Thailand and the Andaman Sea using the WAM (Wave Analysis Model) for sea state forecasting.</li>
-                      <li>Participated in international meetings and conferences on marine meteorology and tsunami preparedness, contributing to professional discussions and seminars.</li>
-                    </ul>
-                  </li>
-                  <li class="workList">
-                    <h4 id="titleName">Meteorologist 4, Marine Meteorological Center  <span id="time">(May 2008 - November 2008)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Forecasted wave heights and sea conditions using the Wave Analysis Model (WAM).</li>
-                      <li>Represented Thailand in marine meteorology and tsunami preparedness conferences.</li>
-                    </ul>
-                  </li>
-                  <li class="workList">
-                    <h4 id="titleName">Meteorologist 3, Marine Meteorological Center  <span id="time">(May 2006 - April 2008)</span></h4>
-                    <ul class="detailsBullets">
-                      <li>Collected and recorded marine meteorological data from buoys and automatic weather stations for wave observation reports.</li>
-                      <li>Researched air-sea interactions and coordinated with domestic and international agencies to enhance data accuracy and dissemination.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </section>
             </div>
-          </section>
+          </div>
         </div>
-      </section>
 
-      <section id="education" class="sectionHover">
-        <h2>Educations</h2>
-        <div class="container2">
-          <section id="workSections">
-            <div class="grid-container">
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">University of Washington Tacoma, WA</h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Master of Science in Computer Science and Systems <span id="time">(September 2024 – Present)</span></h4>
-                    <ul class="detailsBullets">
-                      <li><b><em>Expected Graduation:</em></b> March 2026</li>
-                      <li><b><em>GPA:</em></b> 3.86 / 4.0</li>
-                      <li><b><em>Thesis:</em></b> Optimizing Performance and Efficiency of Lattice-Based Post-Quantum Cryptography Algorithms in Resource-Constrained UAV Environments</li>
-                      <li><b><em>Relevant coursework:</em></b> Advanced Algorithms, Machine Learning, Applied Distributed Computing, <br>Post-Quantum Cryptography, Database Systems Internals</li>
-                    </ul>
-                  </li>
-                  <li class="workList">
-                    <h4 id="titleName">Bachelor of Science in Computer Science and Systems <span id="time">(January 2021 – December 2022)</span></h4>
-                  </li>
-                </ul>
-              </section>
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">Pierce College, WA</h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Associate in Arts in Academic Transfer AA DTA, Computer Science <span id="time">(January 2020 – December 2020)</span></h4>
-                  </li>
-                </ul>
-              </section>
-              <section class="workSection">
-                <ul>
-                <h4 class="topicsTitle">Chiang Mai University, Thailand </h4>
-                <ul>
-                  <li class="workList">
-                    <h4 id="titleName">Bachelor of Science in Physics with Minor in Mathematics <span id="time">(May 1999 – March 2004)</span></h4>
-                  </li>
-                </ul>
-              </section>
+        <h3 style="margin-top: 40px;">Projects</h3>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/Vizolytic" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/Vizolytic.jpg" alt="ML Project" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Vizolytic (Sales Analytics & Reporting Dashboard)</h4>
+              <p>A Python and Streamlit-based web application for interactive sales analytics and automated PDF reporting.</p>
             </div>
-          </section>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/Database-Systems-Internals-Project-Query-Optimization" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/maxflow.png" alt="Database Project" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Empirical Analysis of Network Flow Algorithms</h4>
+              <p>A Java-based empirical study comparing the performance of classic and optimized network flow algorithms.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/TCSS543_Project" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/database_internals.png" alt="Database Project" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Database Systems Internals Project</h4>
+              <p>Database Systems Internals Project: Query Optimization.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/ML-App-Cancer-Prediction" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/cancer_predictor.png" alt="API Project" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Breast Cancer Prediction ML App</h4>
+              <p>A simple web application built with Streamlit to predict breast cancer (Malignant or Benign) based on diagnostic features.</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/CryptographicApplication" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/crypto.png" alt="Crypto Project" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Cryptographic Application</h4>
+              <p>Asymmetric encryption and digital signatures at the 256-bit security level.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/Team-3-TCSS-450" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/tiktalkapp.png" alt="TikTalk App" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>TikTalk: Chat&Weather App</h4>
+              <p>Android chat and weather application using Scrum/Agile methodologies.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/TriviaMazeGame_Project" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/triviamaze.png" alt="Trivia Maze Game" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Husky Trivia Maze Game</h4>
+              <p>Team project implementing software life cycle, Agile, and SQLite.</p>
+            </div>
+          </div>
+
+           <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika/Movie_Tickets_Reservation_Systems_Project" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/database.png" alt="Movie Tickets System" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>Movie Tickets Reservation Systems</h4>
+              <p>Online movie ticket booking system with MySQL and PHP.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://github.com/A-Kannika" target="_blank" class="portfolio-link"></a>
+            <img src="./image/projects/project_github.png" alt="More Projects" class="portfolio-image">
+            <div class="portfolio-hover">
+              <h4>More Projects On GitHub...</h4>
+              <p>Some more of my students' and self-taught projects are on GitHub.</p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="achievement" class="sectionHover">
-        <h2>Awards & Achievements</h2>
-        <ul>
-          <li><span>Outstanding Service Award of Summer Quarter 2024</span>, Pierce College, WA</li>
-          <li><span>Chancellor's Lists of Spring and Fall Quarter 2020</span>, Pierce College, WA</li>
-          <li><span>ESCAP/WMO Typhoon Committee member for long-range forecasting (2017)</span>, Thai Meteorological Department, Bangkok, Thailand</li>
-          <li><span>Committee and Secretary of the Automatic Weather Stations (AWS) Project 87 Stations (2014)</span>, Thai Meteorological Department, Bangkok, Thailand</li>
-          <li><span>Committee and Secretary of the Daily Meteorological Dictionary Team (2014)</span>, Thai Meteorological Department, Bangkok, Thailand</li>
-          <li><span>Construction Supplies Acceptance Committee and secretary of the Marine Meteorological Warning System Project (2010 - 2013)</span>, Thai Meteorological Department, Bangkok, Thailand</li>
-        </ul>
-      </section>
+    <section id="education" class="page-section alt-bg">
+      <div class="section-container timeline-container">
+        <h2 class="section-title">Educations</h2>
+        <div class="timeline">
 
-      <section id="contact" class="sectionHover">
-        <h2>Contact</h2>
-        <a href="https://github.com/A-Kannika" target="_blank">
-          <img id="github" src="./image/icon/github.png" alt="">
-        </a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/kannika-armstrong/" target="_blank">
-          <img id="github" src="./image/icon/linkedin.png" alt="">
-        </a>
-      </section>
-    </main>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Sept 2024 – Present</div>
+            <div class="timeline-content">
+              <h4>University of Washington Tacoma, WA</h4>
+              <p><strong>Master of Science in Computer Science and Systems</strong><br>
+                <b><em>Expected Graduation:</em></b> March 2026 | <b><em>GPA:</em></b> 3.86 / 4.0<br>
+                <b><em>Thesis:</em></b> Optimizing Performance and Efficiency of Lattice-Based Post-Quantum Cryptography Algorithms...<br>
+                <b><em>Relevant coursework:</em></b> Advanced Algorithms, Machine Learning, Applied Distributed Computing, Post-Quantum Cryptography, Database Systems Internals</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2021 – Dec 2022</div>
+            <div class="timeline-content">
+                <h4>University of Washington Tacoma, WA</h4>
+                <p><strong>Bachelor of Science in Computer Science and Systems</strong></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2020 – Dec 2020</div>
+            <div class="timeline-content">
+              <h4>Pierce College, WA</h4>
+              <p><strong>Associate in Arts in Academic Transfer AA DTA, Computer Science</strong></p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">May 1999 – Mar 2004</div>
+            <div class="timeline-content">
+              <h4>Chiang Mai University, Thailand</h4>
+              <p><strong>Bachelor of Science in Physics with Minor in Mathematics</strong></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+<section id="Work" class="page-section">
+  <div class="section-container timeline-container">
+    <h2 class="section-title">Work Experiences</h2>
+    <div class="timeline">
+      
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Sept 2024 - June 2025</div>
+        <div class="timeline-content">
+          <h4>University of Washington Tacoma, WA</h4>
+          <ul>
+            <strong>Teaching Assistant (March 2025 - Present)</strong><br>
+            <li>
+              - Led lab sessions, provided personalized feedback, and evaluated student Java programming projects.
+            </li>
+            <li>
+              - Mentored with class projects, problem-solving strategies, and Java code debugging.
+            </li>
+            <br>
+            <strong>Computer Science Mentor (September 2024 - March 2025)</strong><br>
+            <li>
+              - Mentored 50+ students in data structures, algorithms, and computer science coursework.
+            </li>
+            <li>
+              - Assisted with class projects, problem-solving strategies, and debugging Python/Java code.
+            </li>
+            <li>
+              - Designed visual explanations for complex topics, improving student comprehension.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2020 - 2024</div>
+        <div class="timeline-content">
+          <h4>Pierce College, WA</h4>
+          <ul>
+            <strong>Computer Science and Mathematics/Calculus Supplemental Instruction Tutor</strong><br>
+            <li>      
+              - Tutored and mentored 4 classrooms of 86 undergraduate students in Calculus, Introduction to Programming (Python), and Computer Science I & II (Java and Object-Oriented Programming).
+            </li>
+            <li>      
+              - Facilitated out-of-class group study sessions to reinforce course material and enhance understanding of class criteria.
+            </li>
+            <li>      
+              - Provided individualized and group support to students needing extra help, employing diverse teaching techniques to promote critical thinking and problem-solving skills.
+            </li>
+            <li>      
+              - Focused on content mastery and effective learning strategies to help students achieve passing grades.
+            </li>
+            <li>      
+              - Maintained a positive, encouraging learning environment and coordinated with professors to align supplemental instruction with course objectives.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2024 - Dec 2024</div>
+        <div class="timeline-content">
+          <h4>The Princeton Review / Tutor.com, (Remote)</h4>
+          <ul>
+            <strong>Mathematics and Computer Science Tutor</strong><br>
+            <li>
+              - Tutored students in Algebra, Trigonometry, Calculus, and Computer Science, helping them deepen their understanding of core concepts outside of class hours.
+            </li>
+            <li>
+              - Enhanced academic performance and supported retention in Mathematics and Java courses by applying effective instructional strategies.
+            </li>
+            <li>
+              - Utilized diverse teaching techniques to encourage content mastery and independent problem-solving.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2006 – May 2018</div>
+        <div class="timeline-content">
+          <h4>Thai Meteorological Department, Bangkok, Thailand</h4>
+          <ul>
+            <strong>Secretary to the Deputy Director-General for Academic Affairs (2013 - 2018)</strong><br>
+            <li>        
+              - Reviewed, screened, and summarized academic and policy-related documents prior to executive consideration.
+            </li>
+            <li>        
+              - Advised and supported the Deputy Director-General on academic initiatives, government correspondence, and inter-agency coordination.
+            </li>
+            <li>        
+              - Liaised with internal departments and external agencies to ensure the timely and accurate dissemination of academic content.
+            </li>
+            <li>        
+              - Assisted in drafting official letters, reports, and briefing materials for academic and administrative matters.
+            </li>
+            <li>        
+              - Maintained confidential records, monitored project progress, and coordinated schedules and meeting agendas
+            </li>
+            <br>
+            <strong>Meteorologist Practitioner, Climatological Center (2010 - 2018)</strong><br>
+            <li>
+              - Analyzed historical and real-time climate data from meteorological stations, radar, satellite imagery, and computer models to develop accurate climate and seasonal predictions.
+            </li>
+            <li>
+              - Collaborated in developing and refining weather models using statistical and predictive analysis, supporting seasonal outlooks for Thailand and Southeast Asia.
+            </li>
+            <li>
+              - Provided expert insights on global and regional climate factors (e.g., ENSO, IOD, Asian monsoon, MJO, SST) to guide strategies in pollution control, agriculture, water management, and climate change mitigation.
+            </li>
+            <li>
+              - Presented climate predictions and recommendations at local and international seminars, conferences, and forums, including participation in the ASEAN Climate Outlook Forum.
+            </li>
+            <br>
+            <strong>Meteorologist Practitioner, Marine Meteorological Center (2006 - 2010)</strong><br>
+            <li> 
+              - Analyzed wave height data in the Gulf of Thailand and the Andaman Sea using the WAM (Wave Analysis Model) for sea state forecasting.
+            </li>
+            <li> 
+              - Participated in international meetings and conferences on marine meteorology and tsunami preparedness, contributing to professional discussions and seminars.
+            </li>
+            <li> 
+              - Forecasted wave heights and sea conditions using the Wave Analysis Model (WAM).
+            </li>
+            <li> 
+              - Represented Thailand in marine meteorology and tsunami preparedness conferences.
+            </li>
+            <li> 
+              - Collected and recorded marine meteorological data from buoys and automatic weather stations for wave observation reports.
+            </li>
+            <li> 
+              - Researched air-sea interactions and coordinated with domestic and international agencies to enhance data accuracy and dissemination.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </div>
+</section>
+
+    <section id="achievement" class="page-section">
+      <div class="section-container">
+        <h2 class="section-title">Awards & Achievements</h2>
+        <ul class="achievement-list">
+          <li>Outstanding Service Award of Summer Quarter 2024, Pierce College, WA</li>
+          <li>Chancellor's Lists of Spring and Fall Quarter 2020, Pierce College, WA</li>
+          <li>ESCAP/WMO Typhoon Committee member for long-range forecasting (2017)</li>
+          <li>Committee and Secretary of the Automatic Weather Stations (AWS) Project 87 Stations (2014)</li>
+          <li>Committee and Secretary of the Daily Meteorological Dictionary Team (2014)</li>
+          <li>Construction Supplies Acceptance Committee and secretary of the Marine Meteorological Warning System Project (2010 - 2013)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="page-section alt-bg">
+      <div class="section-container text-center">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">I'd love to connect! You can find me on the following platforms.</p>
+        <div class="social-links">
+          <a href="https://github.com/A-Kannika" target="_blank" class="social-icon">
+            <img src="./image/icon/github-white.png" alt="GitHub">
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kannika-armstrong/" target="_blank" class="social-icon">
+            <img src="./image/icon/linkedin-white.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kannika Armstrong. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
 </body>
 </html>

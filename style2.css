@@ -1,0 +1,302 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 280px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .sidebar .profile-pic {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 0.75rem rgb(3, 240, 248));
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    filter: drop-shadow(0 0 0.75rem rgb(3, 240, 248));
+    
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 5px 0;
+  }
+
+  .sidebar ul li:hover {
+    transform: scale(1.2);
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #06f3e3;
+    box-shadow: 0 2px #06f3e3;
+    
+  }
+  
+  /* Content Area */
+  .content {
+    margin-left: 250px; /* same as sidebar width */
+    padding: 40px;
+    flex: 1;
+  }
+
+  .content .highlight{
+    color: #0749fe;
+    font-weight: bold;
+  }
+
+  .content #skills ul li{
+    margin-left: 15px;
+  }
+  .content #skills ul li span{
+    color: #0749fe;
+    font-weight: bold;
+  }
+
+  .container2 {
+    position: relative;
+  }
+  
+  .text-on-top {
+    position: absolute; /* Positions the text absolutely within the container */
+    top: 0;            /* Places the text at the top of the container */
+    left: 25px;           /*  (Optional) Places the text at the left edge of the container */
+    background-color: white; /* Optional: Adds a background to the text for visibility */
+    padding: 5px;
+    font-size: 20px;
+  }
+  #ResearchProjects {
+    padding-bottom: 0;
+  }
+
+  #projects {
+    margin-top: -40px;
+  }
+  .text-on-top2 {
+    top: 0;            /* Places the text at the top of the container */
+    left: 0;           /*  (Optional) Places the text at the left edge of the container */
+    background-color: white; /* Optional: Adds a background to the text for visibility */
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .researchSection {
+    background-color: #d2e6fa;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .researchSection:hover {
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+  }
+
+  #titleName {
+    font-style: italic;
+    color:  rgba(11, 57, 243, 0.892);
+  }
+
+  .detailsBullets {
+    font-size: 14px;
+    padding-left: 30px;
+    font-style: normal;
+  }
+
+  #time {
+    color: gray;
+    font-style: italic;
+  }
+
+  #skillSet {
+    background-color: rgba(11, 57, 243, 0.892);
+    color: white;
+    padding: 2px 5px 2px 2px;
+    font-size: 12px;
+    font-style: italic;
+    margin: 10px 5px 0px 5px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    margin: 0px 8px 8px 8px;
+  }
+  
+  
+  .grid-container2 > div {
+    background-color: #f1f1f1;
+    color:#000;
+    padding: 20px;
+    
+  }
+
+  #itemSet {
+    background-color: #d2e6fa;
+    margin: 5px 5px 5px 5px;
+    border-radius: 8px;
+  }
+
+  #itemSet:hover {
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+  }
+  
+  .item1, .item2 {
+    grid-column: 1 / 4;
+  }
+
+  .projectTitle {
+    font-size: 16px;
+  }
+
+  #projectTime {
+    color: gray;
+    font-style: italic;
+  }
+
+  #projectName {
+    font-size: 16px;
+    font-style: italic;
+    color:  rgba(11, 57, 243, 0.892);
+
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.info {
+  margin-top: 1.3rem;
+  align-content: center;
+  align-items: center;
+}
+
+#github{
+  width: 30px;
+  height: 30px;
+  align-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#github:hover {
+  transform: scale(1.1);
+}
+
+.detailsCard {
+  font-size: 14px;
+  font-style: normal;
+}
+
+#skillSet2 {
+  background-color: rgba(11, 57, 243, 0.892);
+  color: white;
+  padding: 2px 5px 2px 2px;
+  font-size: 10px;
+  font-style: italic;
+  margin: 10px 0px 0px 0px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.workSection {
+  background-color: #d2e6fa;
+}
+.workSection:hover {
+  border: .1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.workList {
+  margin: 15px;
+  font-size: 14px;
+  font-style: normal;
+}
+
+#Work {
+  padding-bottom: 0;
+}
+
+#education {
+  padding-bottom: 0;
+}
+
+.content #achievement ul li{
+  margin-left: 15px;
+}
+.content #achievement ul li span{
+  color: #0749fe;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+  
+section {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.sectionHover:hover {
+    filter: drop-shadow(0 0 0.5rem rgb(3, 240, 248));
+}
+
+.lineUp {
+  display:flex;
+  align-items: center;
+}
+  
