@@ -785,3 +785,46 @@ body.light-mode .footer {
     font-size: 2rem;
   }
 }
+
+/* ==============================================
+   SWAP WORK & EDUCATION BACKGROUNDS
+   ============================================== */
+
+/* --- Dark Mode Swap --- */
+
+/* Make Education section the default dark color */
+#education {
+  background-color: #121212;
+}
+/* Make Work section the alt dark color */
+#Work {
+  background-color: #1f1f1f;
+}
+
+/* Fix timeline dot borders for dark mode */
+#education .timeline-dot {
+  border-color: #121212; /* Match new default bg */
+}
+#Work .timeline-dot {
+  border-color: #1f1f1f; /* Match new alt bg */
+}
+
+
+/* --- Light Mode Swap --- */
+
+/* Make Education section the default light color */
+body.light-mode #education {
+  background-color: #f4f4f4;
+}
+/* Make Work section the alt light color */
+body.light-mode #Work {
+  background-color: #ffffff;
+}
+
+/* Fix timeline dot borders for light mode */
+body.light-mode #education .timeline-dot {
+  border-color: #f4f4f4; /* Match new default bg */
+}
+body.light-mode #Work .timeline-dot {
+  border-color: #ffffff; /* Match new alt bg */
+}
